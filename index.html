@@ -2,6 +2,10 @@
 <title>Rifas</title>
   <head>
     <style>
+    #main{
+        margin-top: 50px;
+        margin-left: 100px; 
+    }
    .inicial {
       position: relative;
       left: 70px;
@@ -13,6 +17,11 @@
       left: 350px;
       bottom: 60px;
       }
+      
+    .content{
+        height: 200px;
+    }
+    
     </style>
   </head>
     <body>
@@ -30,7 +39,7 @@
     pathname.pop();
 	var html = "";
 	for(i=0;i<800; i++){
-	html += '<div>'+
+	html += '<div class="content">'+
 		'<img src="file:///'+pathname.join("/")+'/modelos-de-rifas-para-download.jpg" alt="Resultado de imagem para rifas" />'+
 		'<div class="inicial"><b>'+(i+1)+'</b></div>'+
 		'<div class="final"><b>'+(i+1)+'</b></div>'+
